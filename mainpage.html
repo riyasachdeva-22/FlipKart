@@ -1,0 +1,335 @@
+<html>
+<head>
+	<title>Flipcart</title>
+	<script>
+		var modalBtns=document.querySelectorAll('.modal-open');
+modalBtns.forEach(function(btn)
+{
+  btn.onclick=function(){
+    var modal=btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display="block";
+  };
+});
+var closeBtns=document.querySelectorAll('.modal-close');
+closeBtns.forEach(function(btn)
+{
+  btn.onclick=function()
+  {
+    var modal=btn.closest('.modal').style.display="none";
+  };
+});
+
+window.onclick=function(e)
+{
+  if(e.target.className=='modal')
+  {
+    e.target.style.display="none";
+  }
+};
+	</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href=mainpage.css>
+	<link rel="stylesheet" href=modal.css>
+	<link rel="stylesheet" href=card.css>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<nav class="navbar background">
+<body bgcolor="#047BD5">
+	<script src="deals.js"></script>
+  <table class="background">
+<tr>
+		<td>
+    <div class="menu"></div>
+	<div class="menu"></div>
+	<div class="menu"></div>
+</td> 
+<td>
+<h1><font color="white"> Flipkart</font> <sup >Lite</sup></h1>
+
+</td>
+<td>
+	<i class="fa fa-plus-square" style="font-size:48px;color:white"></i>
+</td>
+<td>
+	<i class='fas fa-shopping-cart' style='font-size:48px;color:white'></i>
+</td> 
+<td>
+	<i class='fas fa-user-alt' style='font-size:48px;color:white'></i>
+</td> 
+</tr>
+
+</table>
+<table class="background">
+	<tr>
+		<td>
+			<div class="sb-example-1">
+				
+				<div class="search">
+					<button type="submit" class="searchButton">
+					<i class="fa fa-search"></i>
+					 </button>
+					
+				   <input type="text" class="searchTerm" placeholder="Search for Products,Brands and More">
+				
+				</div>
+			 </div>
+		</td>
+	</tr>
+</table>
+</nav>
+<br>
+<table class="background">
+<tr>
+	
+	<th width=16.5%>
+		
+		<i class='fas fa-tag' style='font-size:48px;color:white ;align-items: right;'></i>
+	</th>
+	<th width=16.5%>
+	<i class="fa fa-mobile-phone" style="font-size:48px;color:whitesmoke"></i>
+
+	</th>
+	<th width=16.5%>
+		<i class='fas fa-tshirt' style='font-size:48px;color:white'></i>
+	</th>
+	<th width=12.5%>
+	<i class="fa fa-home" style="font-size:48px;color:white"></i>
+</th>
+<th width=8.5%>
+	<i class='fas fa-ellipsis-h' style='font-size:48px;color:white'></i>
+</th>
+</tr>
+<br>
+<tr>
+	<td>
+		<div class="font">
+		<h1>Offers</h1>
+
+		</div>
+	</td>
+
+
+	<td>
+		<div class="font">
+		<h1>Electronics</h1>
+
+		</div>
+	</td>
+	<td>
+		<div class="font">
+		<h1>Fashion</h1>
+
+		</div>
+	</td>
+
+	<td>
+		<div class="font">
+		<h1>Home</h1>
+
+		</div>
+	</td>
+	<td>
+		<div class="font">
+		<h1>More</h1>
+
+		</div>
+	</td>
+</tr>
+
+</table>
+<div>
+	<img src="electronics3.jpg" width="100%">
+</div>
+<br>
+<table class="background">
+	<tr>
+		<th><img src="6.jpg" width="80%"></th>
+<th><h4 id="demo"></p></th>
+<th><img src="c0.jpg"></th>
+</tr>
+</table>
+<table border="0" width="100%" bgcolor="white">
+	  <div class="font">
+       <tr>
+         
+        <td colspan="6"><h2>Earings</h2><hr></td>
+	   </tr>
+	  
+        <tr>
+			<caption>Sale! Sale! Bumper Sale!</caption>
+            <td><img src="e1.jpg" width="100%" ></td>
+            <td><img src="e2.jpg" width="100%"></td>
+            <td><img src="e3.jpg" width="100%"></td>
+            <td><img src="e4.jpg" width=100%"></td>
+            <td><img src="e5.jpg" width=100%"></td>
+            <td><img src="e3.jpg" width="100%"></td>
+
+        </tr>
+        <tr>
+            <th><h2 color:red>Price:299/- </h2></th>
+            <th><h2>Price:399/-</h2></th>
+            <th><h2>Price:499/-</h2></th>
+            <th><h2>Price:599/-</h2></th>
+            <th><h2>Price:199/-</h2></th>
+            <th><h2>Price:699/-</h2></th>
+		</tr>
+		<br>
+        <tr>
+			
+            <td><h2>Mobile Phones </h2><hr></td>
+       </tr>
+        <tr>
+            <th><img src="red.jpg" width="100%" ></th>
+            <th><img src="vivo1.jpg" width="100%"></th>
+            <th><img src="oppo.jpg" width="100%"></th>
+            
+            <th><img src="phone2.jpg" width=100%"></th>
+            <th><img src="apple.jpg" width="100%"></th>
+            <th><img src="vivo2.jpg" width=100%"></th>
+    
+
+        </tr>
+        <tr>
+            <th><h2 color:red>Price:5999/- </h2></th>
+            <th><h2>Price:9799/-</h2></th>
+            <th><h2>Price:41299/-</h2></th>
+            <th><h2>Price:32999/-</h2></th>
+            <th><h2>Price:19999/-</h2></th>
+            <th><h2>Price:9999/-</h2></th>
+        </tr>
+        </div>
+	</table>
+	<br>
+<footer>
+	<table class="background">
+		<tr>
+			<th width="33%">
+			<button class="modal-open" data-modal="modal1"><i class='fas fa-search-dollar' style='font-size:48px;color:blue'></i>Compare Prices</button>
+
+			</th>
+			<th width="33%">
+				<button class="modal-open" data-modal="modal2"><i class="fa fa-splotch" style="font-size:46px;color:yellow"></i>Deals</button>
+			</th>
+			<th width="33%">
+				<button class="modal-open" data-modal="modal3"><i class='fas fa-tag' style='font-size:48px;color:red ;align:center'></i>Coupons</button>
+			</th>
+			
+		
+		<div class="modal" id="modal1">
+			<div class="modal-content">
+				<div class="modal-header">Compare Prices
+					<button class="icon modal-close"><i class="material-icons"></i>Close</button>
+				</div>
+				<div class="modal-body"> 
+					<div class="row" >
+						<div class="column">
+						 <div class="card">
+						<img src="jeans4.jpg" alt="Denim Jeans" style="width:100%" align="left">
+						<h2>Tailored Jeans</h2>
+						<p class="price">$19.99</p>
+						<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+						<p><button>Add to Cart</button></p>
+					  </div>
+						</div>
+					  
+						<div class="column">
+						 <div class="card">
+						<img src="jeans7.jpg" alt="Ribbed Jeans" style="width:100%" align="left">
+						<h2>Ribbed</h2>
+						<p class="price">$79.99</p>
+						<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+						<p><button>Add to Cart</button></p>
+					  </div>
+						</div>
+						
+						<div class="column">
+						 <div class="card">
+						<img src="jeans6.jpg" alt="" style="width:100%" align="left">
+						<h2>BOOTCUT</h2>
+						<p class="price">$89.99</p>
+						<p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+						<p><button>Add to Cart</button></p>
+					  </div>
+						</div>
+						
+					
+						  
+				
+				</div>
+				<div class="modal-footer"><button class="link modal close">Close Modal</button></div>
+				
+			</div>
+		</div>
+		<div class="modal" id="modal2">
+			<div class="modal-content">
+				<div class="modal-header">Hot Deals in this Category
+					<button class="icon modal-close"><i class="material-icons"></i>Close</button>
+				</div>
+				<div class="modal-body"> 
+					<div class="column">
+						<div class="card">
+					   <img src="c6.jpg" alt="Denim Jeans" style="width:100%" align="center">
+					   <h1>Best Dress For Summers</h1>
+					   <p class="price">$19.99</p>
+					   <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+					   <p><button>Add to Cart</button></p>
+					 </div>
+					   </div>
+
+				</div>
+				<div class="modal-footer"><button class="link modal close">Close Modal</button></div>
+
+			</div>
+		</div>
+		<div class="modal" id="modal3">
+			<div class="modal-content">
+				<div class="modal-header"> Latest Coupons
+					<button class="icon modal-close"><i class="material-icons"></i>Close</button>
+				</div>
+				<div class="modal-body">
+					<section class="section">
+						<div class="paras">
+						<p class="sectionTag text-big"><h1> COUPON-CODE -919MONGO</h1></p>
+						<p class="sectionSubTag text-small">Purchase upto  $57.99  And get 1 Jean Freee</p>
+						</div>
+						<div class="thumbnail">
+							<img src="coupon.jpg" alt="coupon" class="imgfluid">
+						</div>
+					</section>
+					<section class="section left">
+					  <div class="paras">
+					  <p class="sectionTag text-big"><h1> COUPON-CODE -934REDFM</h1></p>
+					  <p class="sectionSubTag text-small">20% CashBack on DENIM  Jeans.
+						  Offer Valid Till Weekend.Avail IT AS Soon as Possible </p>
+					  </div>
+					  <div class="thumbnail">
+						  <img src="coupon2.png" alt="laptop" class="imgfluid">
+					  </div>
+				  </section>
+				  <section class="section">
+					  <div class="paras">
+					  <p class="sectionTag text-big"><h1>COUPON-CODE -RIYA_SACHDEVA</h1></p>
+					  <p class="sectionSubTag text-small">Buy 5 Get 5 Offer .Purchase 5 items and get 5 Free</p>
+					  </div>
+					  <div class="thumbnail">
+						  <img src="coupon1.jpg" alt="laptop" class="imgfluid">
+					  </div>
+				  </section>
+					
+					</div>
+				<div class="modal-footer"><button class="link modal close">Close Modal</button></div>
+				
+			</div>
+		</div>
+		</tr>
+		</table>	 
+</footer>
+	</body>
+	<script src="modal.js"></script>
+</html>
+	
